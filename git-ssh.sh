@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
-exec ssh -i "$SSH_IDENTITY_FILE" "$@"
+exec ssh -i "$SSH_IDENTITY_FILE" -o StrictHostKeyChecking=no "$@"
 
